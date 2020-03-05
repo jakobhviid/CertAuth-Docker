@@ -1,0 +1,3 @@
+# Ignore everything inside cert-api directory except src /cert-api/directory
+/cert-api/**
+!/cert-api/src
