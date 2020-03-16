@@ -50,7 +50,11 @@ def sign_certificate_route():
         resp.status_code = 400
         return resp
 
-# TODO: Figure out other routes, such as sending public certificate so that users can inject them into their keystores
+@app.route('/get-certificate', methods=['GET'])
+def get_certificate_route():
+    # TODO: Make sure that not just everyone can get access to this certificate
+    return send_from_directory('/ssl', 'ca-cert')
+
 
 if __name__ == "__main__":
     # Listen on any connections for containerization

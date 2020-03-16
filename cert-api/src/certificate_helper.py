@@ -1,6 +1,6 @@
 from subprocess import call
 
-SIGNED_CERTIFICATES_PATH = '/ssl/signed_certificates'
+SIGNED_CERTIFICATES_PATH = '/signed_certificates'
 
 
 def sign_certificate(certificate_file_path, certificate_suffix):
